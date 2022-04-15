@@ -1,0 +1,1 @@
+console.log("Desafío 2 por Diego Cáceres Cardoza ");var elJsMenuTrigger=document.querySelector(".jsMenuTrigger"),elMainMenu=document.querySelector(".mainMenu"),elMenuTrigger=document.querySelector(".menuTrigger");elJsMenuTrigger.onclick=function(){elJsMenuTrigger.classList.toggle("active"),elMainMenu.classList.toggle("active"),elMenuTrigger.classList.toggle("active")};

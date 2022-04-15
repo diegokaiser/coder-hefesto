@@ -1,0 +1,43 @@
+{
+  "name": "coder-hefesto",
+  "version": "1.0.0",
+  "description": "Proyecto Hefesto",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegokaiser/coder-hefesto.git"
+  },
+  "author": "Diego Cáceres Cardoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegokaiser/coder-hefesto/issues"
+  },
+  "homepage": "https://github.com/diegokaiser/coder-hefesto#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-changed": "^4.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-version-number": "^0.2.4",
+    "imagemin-pngquant": "^9.0.2",
+    "jquery": "^3.6.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.50.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
+}
