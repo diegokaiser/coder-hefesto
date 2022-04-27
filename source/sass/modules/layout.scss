@@ -553,6 +553,108 @@ form {
   }
 }
 
+.post {
+  &ReciptSlider {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  &Recipt {
+    margin: 0 35px;
+    h3 {
+      color: #232326;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 7px;
+      text-align: center;
+    }
+    h4 {
+      color: #FA0C0C;
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    &_content {
+      h5 {
+        color: #FA0C0C;
+        font-size: 1.6em;
+        font-weight: normal;
+        margin-bottom: 7px;
+      }
+      ul {
+        line-height: 1.6em;
+        margin-bottom: 21px;
+        li {
+          color: #232326;
+          font-size: 1.4em;          
+        }
+      }
+      em {
+        color: #232326;
+        font-size: 1.4em;
+      }
+      p {
+        color: #232326;
+        font-size: 1.4em;
+        line-height: 1.6em;
+        margin-bottom: 14px;
+      }
+    }
+  }
+  &Comments {
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 160px 0 0 0;
+    width: 100%;
+    @include laptop1200 {
+      margin: 0 auto;    
+      width: 1140px;
+    }
+    &_avatar {
+      margin-right: 14px;
+    }
+    &_content {
+      &_info {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 11px;
+        &_user {
+          a {
+            color: #77767E;
+            font-size: 1.4em;
+            text-decoration: none;
+          }
+        }
+        &_date {
+          span {
+            color: #9A99A2;
+            font-size: 1.2em;
+          }
+        }
+      }
+      p {
+        color: #232326;
+        font-size: 1.5em;
+      }
+    }
+  }
+  &Comment {
+    align-items: flex-start;
+    border-top: 1px solid #E6E4EA;
+    display: flex;
+    justify-content: flex-start;
+    padding: 11px 14px 21px 14px;
+    width: 100%;
+  }
+}
+
 footer {
   align-items: center;
   background-color: var(--bg-gris);
