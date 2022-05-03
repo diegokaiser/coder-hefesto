@@ -584,8 +584,10 @@ form {
         margin-bottom: 7px;
       }
       ul {
-        line-height: 1.6em;
+        line-height: 1.8em;
+        list-style: disc;
         margin-bottom: 21px;
+        padding-left: 16px;
         li {
           color: #232326;
           font-size: 1.4em;          
@@ -667,5 +669,61 @@ footer {
   @include mobile480 {
     height: 480px;
     margin-bottom: unset;
+  }
+}
+
+$error: #F44336;
+$success: #4CAF50;
+$primary: #2196F3;
+$message: #9E9E9E;
+
+$alertColors: (
+  "error": $error,
+  "success": $success,
+  "primary": $primary,
+  "message": $message,
+);
+
+@each $name, $alerta in $alertColors {
+  .alert-#{$name} {
+    border: 1px solid $alerta;
+    border-radius: 3px;
+    background-color: $alerta;
+    color: var(--bg-gris);
+  }
+}
+
+
+.button {
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  color: var(--bg-gris);
+  &--error {
+    @extend .button;
+    border-color: #F44336;
+    border-width: 2px;
+    background-color: #F44336;
+    color: white;
+  }
+  &--success {
+    @extend .button;
+    border-color: #4CAF50;
+    border-width: 2px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  &--primary {
+    @extend .button;
+    border-color: #2196F3;
+    border-width: 2px;
+    background-color: #2196F3;
+    color: white;
+  }
+  &--message {
+    @extend .button;
+    border-color: #9E9E9E;
+    border-width: 2px;
+    background-color: #9E9E9E;
   }
 }
